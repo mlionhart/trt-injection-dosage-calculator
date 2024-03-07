@@ -19,7 +19,7 @@ $(document).ready(function () {
       result = result.toFixed(2);
      
       // Build string of text to display result
-      info = "<h3>" + "Your " + "<span id='special'>" + "Injection Amount" + "</span>" + " is: " + "</h3>" + "<br>" + "<h1 id='specialH1'>" + result + "cc</h1>";
+      info = "<h3>" + "Your " + "<span id='special'>" + "Injection Amount" + "</span>" + " is: " + "</h3>" + "<br>" + "<h1 id='specialH1'>" + result + "cc</h1> (based on a 200mg/ml vial)";
       
 
       // display text
