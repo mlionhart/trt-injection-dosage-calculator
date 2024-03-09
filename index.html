@@ -15,6 +15,19 @@
         </div>
         
         <div id="form">
+            <label for="vial_concentration">Select Vial Concentration (in mg/ml) <span class="special">&nbsp;Important! Don't skip this step.</span></label>
+            <select name="" id="vial_concentration" class="custom-select mb-2">
+              <option value="100">100mg/ml</option>
+              <option value="150">150mg/ml</option>
+              <option value="200" selected>200mg/ml (common for TRT)</option>
+              <option value="250">250mg/ml</option>
+              <option value="300">300mg/ml</option>
+              <option value="350">350mg/ml</option>
+              <option value="400">400mg/ml</option>
+              <option value="450">450mg/ml</option>              
+              <option value="500">500mg/ml</option>              
+            </select><br>
+
             <label for="injection_frequency">Select Your Injection Frequency</label>
             <select name="" id="injection_frequency" class="custom-select mb-2">
                 <option value="1">Once per day</option>
@@ -26,7 +39,7 @@
                 <option value="3.5">Twice per week</option>
             </select><br>    
 
-            <label for="weekly_dose">Enter Your Weekly Dose (mg):</label>
+            <label for="weekly_dose">Enter Your Desired Weekly Dose (mg):</label>
             <input name="" id="weekly_dose" class="form-control">
 
             <button id="button" class="btn btn-block btn-primary mt-3">Calculate Injection Dosage</button>

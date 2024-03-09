@@ -44,6 +44,9 @@ $(document).ready(function () {
     // get value selected in injection frequency field
     injection_frequency = $("#injection_frequency").val();
 
+    // get value selected in vial concentration field
+    vial_concentration = $("#vial_concentration").val();
+
     // get value selected in weekly dose field
     weekly_dose = $("#weekly_dose").val();
 
@@ -51,7 +54,7 @@ $(document).ready(function () {
     container = $("#container");
 
     // Calculate injection dosage based on desired weekly dose and desired injection frequency
-    result = (weekly_dose * injection_frequency) / 1400;
+    result = (weekly_dose * injection_frequency) / (7 * vial_concentration);
 
     // Round result to nearest hundredth
     result = result.toFixed(2);
@@ -68,7 +71,7 @@ $(document).ready(function () {
       "<br>" +
       "<h1 id='specialH1'>" +
       result +
-      "cc</h1> (based on a 200mg/ml vial)";
+      "cc</h1> (based on a " + vial_concentration + "mg/ml vial)";
 
     // display text
     container.html(info);

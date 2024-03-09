@@ -11,6 +11,11 @@ body {
   background: gray;
 }
 
+.special {
+  color: red;
+  text-transform: uppercase;
+}
+
 #header {
   text-align: center;
   margin-right: -20px;
