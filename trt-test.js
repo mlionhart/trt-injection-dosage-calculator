@@ -71,7 +71,8 @@ $(document).ready(function () {
       "<br>" +
       "<h1 id='specialH1'>" +
       result +
-      "cc</h1> (based on a " + vial_concentration + "mg/ml vial)";
+      // "cc</h1>() (based on a " + vial_concentration + "mg/ml vial)";
+      `ml*</h1> <span id="ml">*Based on a ${vial_concentration} mg/ml vial</span>`;
 
     // display text
     container.html(info);
