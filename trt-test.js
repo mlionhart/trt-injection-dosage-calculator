@@ -53,6 +53,12 @@ $(document).ready(function () {
     // get handle to container that will be displaying text
     container = $("#container");
 
+    if ((weekly_dose == null) || (weekly_dose == '')) {
+      info = `<h1 style="color:red;">Please Fill Out All Fields</h1>`;
+      container.html(info);
+      return;
+    }
+
     // Calculate injection dosage based on desired weekly dose and desired injection frequency
     result = (weekly_dose * injection_frequency) / (7 * vial_concentration);
 

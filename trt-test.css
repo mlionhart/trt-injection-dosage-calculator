@@ -13,7 +13,7 @@ body {
 
 .special {
   color: red;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #header {
